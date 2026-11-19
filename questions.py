@@ -3,7 +3,7 @@ import streamlit as st
 if "pontuacao" not in st.session_state:
     st.session_state.pontuacao = 0
 
-if "pergunta_respondida" not in st.session_state:
+if "pergunta_respondidas" not in st.session_state:
     st.session_state.perguntas_respondidas = set()
 
 if "resultados_perguntas" not in st.session_state:
