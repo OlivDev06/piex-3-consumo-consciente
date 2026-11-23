@@ -259,13 +259,13 @@ def mostrar_resultado():
 
 def exibir_perguntas():
     if "pontuacao" not in st.session_state:
-    st.session_state.pontuacao = 0
+        st.session_state.pontuacao = 0
 
-    if "pergunta_respondidas" not in st.session_state:
-    st.session_state.perguntas_respondidas = set()
+    if "perguntas_respondidas" not in st.session_state:
+        st.session_state.perguntas_respondidas = set()
 
     if "resultados_perguntas" not in st.session_state:
-    st.session_state.resultados_perguntas = {}
+        st.session_state.resultados_perguntas = {}
     
     st.title("Teste seus conhecimentos sobre consumo consciente, "
               "Reciclagem e descarte de resíduos")
@@ -304,4 +304,5 @@ def mostrar_detalhes():
 
 
     
+
 
