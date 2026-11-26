@@ -88,7 +88,7 @@ def criar_grafico_rejeitos():
         color=alt.Color("tipo:N", title="Indicador"),
         strokeDash=alt.StrokeDash("tipo:N", title="Indicador", scale=alt.Scale(domain=["Resultado realizado", "Previsão"], range=[[1, 0], [6, 4]])),
         tooltip=[alt.Tooltip("ano:N", title="Ano"), alt.Tooltip("tipo:N", title="Tipo"),
-        alt.Tooltip("percentual:Q", title="Percentual", format=".2f")]
+        alt.Tooltip("percentual:Q", title="Percentual %", format=".2f")]
     ).properties(width=500, height=300).interactive()
 
     
@@ -138,7 +138,7 @@ def criar_grafico_aterro():
         color=alt.Color("tipo:N", title="Indicador"),
         strokeDash=alt.StrokeDash("tipo:N", title="Indicador", scale=alt.Scale(domain=["Resultado realizado", "Meta"], range=[[1, 0], [6, 4]])),
         tooltip=[alt.Tooltip("ano:N", title="Ano"), alt.Tooltip("tipo:N", title="Tipo"),
-        alt.Tooltip("percentual:Q", title="Percentual", format=".2f")]
+        alt.Tooltip("percentual:Q", title="Percentual %", format=".2f")]
     ).properties(width=500, height=300).interactive()
 
     st.subheader("Resíduos destinados ao aterro sanitário")
